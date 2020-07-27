@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin:0;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.container{
+display: flex;
+background-color: #fff;
+
+border-radius: 3px;
+border:20px solid skyblue;
+width: 1000px;
+max-width: 100%;
+box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+	
+}
+
+ form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-right:1px solid #aaaaaa;
+	padding :40px;
+	flex:1;
+}
+
+a{
+	color:#a124ee;
+	text-decoration: none;
+}
+
+.btn{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #141c2c;
+	color:white;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: bold;
+	margin:20px 0;
+	border: 1px solid #141c2c;
+}
+
+.btn-ghost{
+background-color: transparent;
+border-color: #ecf2ff ;
+color:#141c2c;
+}
+
+.input-field{
+	margin: 10px 0;
+	width: 100%;
+}
+
+.input-field label{
+	display:inline-block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.input-field input{
+	width: 100%;
+	background-color: transparent;
+	border:2px solid #ecf2ff;
+	font-family: inherit;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.checkbox-container{
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.checkbox-container label{
+	color:#7c7e8c;
+
+}
+.checkbox-container a{
+	margin-left:  auto;
+}
+
+
+.features{
+	flex:1.5;
+	padding: 40px;
+}
+
+.feature {
+
+	padding-left: 30px;
+	position: relative;
+	margin:40px 0;
+}
+
+.feature i{
+	position: absolute;
+	top:5;
+	left: 0;
+	color:skyblue;
+
+}
+
+.feature h3{
+ margin: 0;
+}
+
+.feature p{
+	font-size: 14px;
+	color:#7c7e8c;
+	margin: 5px 0;
+	line-height: 1.8;
+}
+
+
+@media (max-width:850px){
+	.container{
+		flex-direction: column;
+		margin-top: auto;
+	}
+
+	form{
+		border-right: none;
+		border-bottom: 1px solid #aaaaaa;
+	}
+}

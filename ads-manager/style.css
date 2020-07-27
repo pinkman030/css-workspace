@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color:#16132B;
+
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+.container{
+background-color:#445588;
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	border-radius: 10px;
+width: 1000px;
+padding: 50px;
+margin: auto;
+}
+
+table{
+	width: 100%;
+	padding: 10px;
+}
+
+table th,table td{
+	color:white;
+	padding: 15px;
+	text-align: left;
+
+}
+
+table tbody tr{
+	background-color: #252046;
+
+	color:white;
+	width: 100%;
+}
+
+
+table tbody tr:hover{
+	background-color:#16132B;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+
+table tbody tr td:first-child{
+	border-top-left-radius:5px ;
+	border-bottom-left-radius: 5px;
+
+}
+table tbody tr td:last-child{
+	border-top-right-radius:5px ;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+}
+
+
+
+table tbody tr.priority-100 td:first-child{
+	border-left: 5px solid tomato;
+}
+
+table tbody tr.priority-200 td:first-child{
+	border-left: 5px solid lime;
+}
+
+table tbody tr.priority-300 td:first-child{
+	border-left: 5px solid orchid;
+}
+
+td i {
+	transform: scale(0.5);
+}
+
+
+table tbody tr.priority-100 td:nth-of-type(3) i{
+	color: tomato;
+}
+
+table tbody tr.priority-200 td:nth-of-type(3) i{
+	color :lime;
+}
+
+table tbody tr.priority-300 td:nth-of-type(3) i{
+	color:orchid;
+}
+td .delete{
+	cursor: pointer;
+	background-color: transparent;
+	color:white;
+	border: none;
+	opacity: 0;
+}
+
+td .delete i {
+	font-size: 30px;
+	
+}
+
+
+table tbody tr:hover .delete{
+opacity: 1;
+}
+
+@media (max-width:768px){
+	.container{
+		padding: 20px;
+	}
+
+	table thead th:nth-of-type(3),
+	table tbody tr td:nth-of-type(3)
+		{
+		display: none;
+	}
+
+td .delete {
+	opacity: 1;
+}
+	
+}
+
