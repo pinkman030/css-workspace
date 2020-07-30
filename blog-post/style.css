@@ -127,3 +127,17 @@ body{
 		width: 350px;
 	}
 }
+
+
+@media (max-width:450px){
+.container{
+	width: 100%;
+}
+	
+	.blog-card{
+		width: 275px;
+		margin-top: 20px;
+	}
+
+
+}

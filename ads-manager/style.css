@@ -19,14 +19,15 @@ body{
 background-color:#445588;
 	box-shadow: 0 5px 10px rgba(0,0,0,.1);
 	border-radius: 10px;
-width: 1000px;
-padding: 50px;
-margin: auto;
+	display: flex;
+	justify-content: center;
+width: 75%;
+padding: 35px;
 }
 
 table{
 	width: 100%;
-	padding: 10px;
+
 }
 
 table th,table td{
@@ -109,10 +110,11 @@ table tbody tr:hover .delete{
 opacity: 1;
 }
 
-@media (max-width:768px){
-	.container{
-		padding: 20px;
-	}
+@media (max-width:668px){
+
+.container{
+	width: 100%;
+}
 
 	table thead th:nth-of-type(3),
 	table tbody tr td:nth-of-type(3)
@@ -126,3 +128,18 @@ td .delete {
 	
 }
 
+
+@media (max-width:400px)
+{
+	table{
+		width: 100%;
+		
+	}
+table th,table td{
+padding: 5px;
+}
+
+table th{
+	font-size: 12px;
+}
+}
